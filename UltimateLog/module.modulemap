@@ -1,0 +1,9 @@
+framework module UltimateLog {
+    umbrella header "./UltimateLog.h"
+    header "MarsWapper.h"
+
+    
+    export *
+    module * { export * }
+
+}

@@ -11,6 +11,26 @@
 		E318E11721EC60BF0007EA07 /* UltimateLogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E318E11621EC60BF0007EA07 /* UltimateLogTests.swift */; };
 		E318E11921EC60BF0007EA07 /* UltimateLog.h in Headers */ = {isa = PBXBuildFile; fileRef = E318E10B21EC60BF0007EA07 /* UltimateLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E318E12321EC60FB0007EA07 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = E318E12221EC60FB0007EA07 /* Logger.swift */; };
+		E318E16321EC7B1A0007EA07 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E318E16221EC7B190007EA07 /* Security.framework */; };
+		E318E21321EC89770007EA07 /* AES256CBC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E318E21221EC89770007EA07 /* AES256CBC.swift */; };
+		E318E2B221EC8DE50007EA07 /* SHA256.swift in Sources */ = {isa = PBXBuildFile; fileRef = E318E2B121EC8DE50007EA07 /* SHA256.swift */; };
+		E318E2BD21EC9F3D0007EA07 /* UltimateLogOnMars.h in Headers */ = {isa = PBXBuildFile; fileRef = E318E2BB21EC9F3D0007EA07 /* UltimateLogOnMars.h */; };
+		E318E2BE21EC9F3D0007EA07 /* UltimateLogOnMars.mm in Sources */ = {isa = PBXBuildFile; fileRef = E318E2BC21EC9F3D0007EA07 /* UltimateLogOnMars.mm */; };
+		E318E2F521ECA3290007EA07 /* log_crypt.cc in Sources */ = {isa = PBXBuildFile; fileRef = E318E2EF21ECA3290007EA07 /* log_crypt.cc */; };
+		E318E2F621ECA3290007EA07 /* LogUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E318E2F021ECA3290007EA07 /* LogUtil.m */; };
+		E318E2F721ECA3290007EA07 /* log_crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = E318E2F121ECA3290007EA07 /* log_crypt.h */; };
+		E318E2F821ECA3290007EA07 /* LogHelper.mm in Sources */ = {isa = PBXBuildFile; fileRef = E318E2F221ECA3290007EA07 /* LogHelper.mm */; };
+		E318E2F921ECA3290007EA07 /* LogUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = E318E2F321ECA3290007EA07 /* LogUtil.h */; };
+		E318E2FA21ECA3290007EA07 /* LogHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = E318E2F421ECA3290007EA07 /* LogHelper.h */; };
+		E318E34721ECB0C90007EA07 /* mars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E318E34621ECB0C90007EA07 /* mars.framework */; };
+		E318E34921ECB2340007EA07 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E318E34821ECB2340007EA07 /* CoreTelephony.framework */; };
+		E318E34B21ECB2840007EA07 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E318E34A21ECB2840007EA07 /* Foundation.framework */; };
+		E318E34D21ECB2890007EA07 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E318E34C21ECB2890007EA07 /* SystemConfiguration.framework */; };
+		E318E34F21ECB2920007EA07 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E318E34E21ECB2920007EA07 /* libz.tbd */; };
+		E318E35121ECB29B0007EA07 /* libresolv.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E318E35021ECB29B0007EA07 /* libresolv.9.tbd */; };
+		E318E35421ECB53F0007EA07 /* MarsWapper.h in Headers */ = {isa = PBXBuildFile; fileRef = E318E35221ECB53F0007EA07 /* MarsWapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E318E35521ECB53F0007EA07 /* MarsWapper.m in Sources */ = {isa = PBXBuildFile; fileRef = E318E35321ECB53F0007EA07 /* MarsWapper.m */; };
+		E318E35721ECCB6E0007EA07 /* AES.swift in Sources */ = {isa = PBXBuildFile; fileRef = E318E35621ECCB6E0007EA07 /* AES.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +51,27 @@
 		E318E11621EC60BF0007EA07 /* UltimateLogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UltimateLogTests.swift; sourceTree = "<group>"; };
 		E318E11821EC60BF0007EA07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E318E12221EC60FB0007EA07 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		E318E16221EC7B190007EA07 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		E318E21221EC89770007EA07 /* AES256CBC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AES256CBC.swift; sourceTree = "<group>"; };
+		E318E2B121EC8DE50007EA07 /* SHA256.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHA256.swift; sourceTree = "<group>"; };
+		E318E2BB21EC9F3D0007EA07 /* UltimateLogOnMars.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UltimateLogOnMars.h; sourceTree = "<group>"; };
+		E318E2BC21EC9F3D0007EA07 /* UltimateLogOnMars.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = UltimateLogOnMars.mm; sourceTree = "<group>"; };
+		E318E2EF21ECA3290007EA07 /* log_crypt.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = log_crypt.cc; sourceTree = "<group>"; };
+		E318E2F021ECA3290007EA07 /* LogUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogUtil.m; sourceTree = "<group>"; };
+		E318E2F121ECA3290007EA07 /* log_crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = log_crypt.h; sourceTree = "<group>"; };
+		E318E2F221ECA3290007EA07 /* LogHelper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LogHelper.mm; sourceTree = "<group>"; };
+		E318E2F321ECA3290007EA07 /* LogUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogUtil.h; sourceTree = "<group>"; };
+		E318E2F421ECA3290007EA07 /* LogHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogHelper.h; sourceTree = "<group>"; };
+		E318E2FB21ECA4890007EA07 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		E318E34621ECB0C90007EA07 /* mars.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = mars.framework; path = Framework/mars.framework; sourceTree = "<group>"; };
+		E318E34821ECB2340007EA07 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		E318E34A21ECB2840007EA07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E318E34C21ECB2890007EA07 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		E318E34E21ECB2920007EA07 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		E318E35021ECB29B0007EA07 /* libresolv.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.9.tbd; path = usr/lib/libresolv.9.tbd; sourceTree = SDKROOT; };
+		E318E35221ECB53F0007EA07 /* MarsWapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MarsWapper.h; sourceTree = "<group>"; };
+		E318E35321ECB53F0007EA07 /* MarsWapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MarsWapper.m; sourceTree = "<group>"; };
+		E318E35621ECCB6E0007EA07 /* AES.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AES.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +79,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E318E35121ECB29B0007EA07 /* libresolv.9.tbd in Frameworks */,
+				E318E34F21ECB2920007EA07 /* libz.tbd in Frameworks */,
+				E318E34D21ECB2890007EA07 /* SystemConfiguration.framework in Frameworks */,
+				E318E34B21ECB2840007EA07 /* Foundation.framework in Frameworks */,
+				E318E34921ECB2340007EA07 /* CoreTelephony.framework in Frameworks */,
+				E318E16321EC7B1A0007EA07 /* Security.framework in Frameworks */,
+				E318E34721ECB0C90007EA07 /* mars.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +106,7 @@
 				E318E10A21EC60BF0007EA07 /* UltimateLog */,
 				E318E11521EC60BF0007EA07 /* UltimateLogTests */,
 				E318E10921EC60BF0007EA07 /* Products */,
+				E318E16121EC7B190007EA07 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,8 +122,11 @@
 		E318E10A21EC60BF0007EA07 /* UltimateLog */ = {
 			isa = PBXGroup;
 			children = (
+				E318E2ED21ECA31E0007EA07 /* XLog */,
+				E318E15C21EC79F80007EA07 /* Utility */,
 				E318E10B21EC60BF0007EA07 /* UltimateLog.h */,
 				E318E10C21EC60BF0007EA07 /* Info.plist */,
+				E318E2FB21ECA4890007EA07 /* module.modulemap */,
 				E318E12221EC60FB0007EA07 /* Logger.swift */,
 			);
 			path = UltimateLog;
@@ -89,6 +141,55 @@
 			path = UltimateLogTests;
 			sourceTree = "<group>";
 		};
+		E318E15C21EC79F80007EA07 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				E318E21221EC89770007EA07 /* AES256CBC.swift */,
+				E318E2B121EC8DE50007EA07 /* SHA256.swift */,
+				E318E35621ECCB6E0007EA07 /* AES.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		E318E16121EC7B190007EA07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E318E35021ECB29B0007EA07 /* libresolv.9.tbd */,
+				E318E34E21ECB2920007EA07 /* libz.tbd */,
+				E318E34C21ECB2890007EA07 /* SystemConfiguration.framework */,
+				E318E34A21ECB2840007EA07 /* Foundation.framework */,
+				E318E34821ECB2340007EA07 /* CoreTelephony.framework */,
+				E318E34621ECB0C90007EA07 /* mars.framework */,
+				E318E16221EC7B190007EA07 /* Security.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E318E2ED21ECA31E0007EA07 /* XLog */ = {
+			isa = PBXGroup;
+			children = (
+				E318E2EE21ECA3290007EA07 /* Component */,
+				E318E2BB21EC9F3D0007EA07 /* UltimateLogOnMars.h */,
+				E318E2BC21EC9F3D0007EA07 /* UltimateLogOnMars.mm */,
+				E318E35221ECB53F0007EA07 /* MarsWapper.h */,
+				E318E35321ECB53F0007EA07 /* MarsWapper.m */,
+			);
+			path = XLog;
+			sourceTree = "<group>";
+		};
+		E318E2EE21ECA3290007EA07 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				E318E2EF21ECA3290007EA07 /* log_crypt.cc */,
+				E318E2F021ECA3290007EA07 /* LogUtil.m */,
+				E318E2F121ECA3290007EA07 /* log_crypt.h */,
+				E318E2F221ECA3290007EA07 /* LogHelper.mm */,
+				E318E2F321ECA3290007EA07 /* LogUtil.h */,
+				E318E2F421ECA3290007EA07 /* LogHelper.h */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -97,6 +198,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E318E11921EC60BF0007EA07 /* UltimateLog.h in Headers */,
+				E318E35421ECB53F0007EA07 /* MarsWapper.h in Headers */,
+				E318E2F721ECA3290007EA07 /* log_crypt.h in Headers */,
+				E318E2FA21ECA3290007EA07 /* LogHelper.h in Headers */,
+				E318E2BD21EC9F3D0007EA07 /* UltimateLogOnMars.h in Headers */,
+				E318E2F921ECA3290007EA07 /* LogUtil.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,7 +304,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E318E2BE21EC9F3D0007EA07 /* UltimateLogOnMars.mm in Sources */,
+				E318E35521ECB53F0007EA07 /* MarsWapper.m in Sources */,
+				E318E2F821ECA3290007EA07 /* LogHelper.mm in Sources */,
+				E318E21321EC89770007EA07 /* AES256CBC.swift in Sources */,
+				E318E2F621ECA3290007EA07 /* LogUtil.m in Sources */,
 				E318E12321EC60FB0007EA07 /* Logger.swift in Sources */,
+				E318E2F521ECA3290007EA07 /* log_crypt.cc in Sources */,
+				E318E35721ECCB6E0007EA07 /* AES.swift in Sources */,
+				E318E2B221EC8DE50007EA07 /* SHA256.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +371,8 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -274,11 +390,13 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MODULEMAP_FILE = ./UltimateLog/module.modulemap;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_INCLUDE_PATHS = " $(SRCROOT)/../";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -321,6 +439,8 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -332,10 +452,12 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MODULEMAP_FILE = ./UltimateLog/module.modulemap;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_INCLUDE_PATHS = " $(SRCROOT)/../";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -346,14 +468,19 @@
 		E318E11D21EC60BF0007EA07 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 5D988FC44C;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Framework",
+				);
 				INFOPLIST_FILE = UltimateLog/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -373,14 +500,19 @@
 		E318E11E21EC60BF0007EA07 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 5D988FC44C;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Framework",
+				);
 				INFOPLIST_FILE = UltimateLog/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -17,3 +17,6 @@ FOUNDATION_EXPORT const unsigned char UltimateLogVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <UltimateLog/PublicHeader.h>
 
 
+#import <CommonCrypto/CommonHMAC.h>
+//#import <UltimateLog/LogUtil.h>
+//#import <UltimateLog/LogHelper.h>

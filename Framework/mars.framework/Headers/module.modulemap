@@ -1,0 +1,4 @@
+module Mars {
+    header "./Mars.h"
+    export *
+}
