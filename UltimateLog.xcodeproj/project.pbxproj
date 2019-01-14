@@ -10,6 +10,7 @@
 		E318E11221EC60BF0007EA07 /* UltimateLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E318E10821EC60BF0007EA07 /* UltimateLog.framework */; };
 		E318E11721EC60BF0007EA07 /* UltimateLogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E318E11621EC60BF0007EA07 /* UltimateLogTests.swift */; };
 		E318E11921EC60BF0007EA07 /* UltimateLog.h in Headers */ = {isa = PBXBuildFile; fileRef = E318E10B21EC60BF0007EA07 /* UltimateLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E318E12321EC60FB0007EA07 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = E318E12221EC60FB0007EA07 /* Logger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		E318E11121EC60BF0007EA07 /* UltimateLogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UltimateLogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E318E11621EC60BF0007EA07 /* UltimateLogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UltimateLogTests.swift; sourceTree = "<group>"; };
 		E318E11821EC60BF0007EA07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E318E12221EC60FB0007EA07 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				E318E10B21EC60BF0007EA07 /* UltimateLog.h */,
 				E318E10C21EC60BF0007EA07 /* Info.plist */,
+				E318E12221EC60FB0007EA07 /* Logger.swift */,
 			);
 			path = UltimateLog;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					E318E10721EC60BF0007EA07 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					E318E11021EC60BF0007EA07 = {
 						CreatedOnToolsVersion = 10.1;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E318E12321EC60FB0007EA07 /* Logger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +346,7 @@
 		E318E11D21EC60BF0007EA07 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -358,6 +364,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.IOFutureTech.UltimateLog;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -366,6 +373,7 @@
 		E318E11E21EC60BF0007EA07 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -391,6 +399,7 @@
 		E318E12021EC60BF0007EA07 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5D988FC44C;
 				INFOPLIST_FILE = UltimateLogTests/Info.plist;
@@ -409,6 +418,7 @@
 		E318E12121EC60BF0007EA07 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5D988FC44C;
 				INFOPLIST_FILE = UltimateLogTests/Info.plist;
