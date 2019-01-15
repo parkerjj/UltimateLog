@@ -19,12 +19,11 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <mars/xlog/xloggerbase.h>
 
 @interface LogHelper : NSObject
 
-+ (void)logWithLevel:(TLogLevel)logLevel moduleName:(const char*)moduleName fileName:(const char*)fileName lineNumber:(int)lineNumber funcName:(const char*)funcName message:(NSString *)message;
-+ (void)logWithLevel:(TLogLevel)logLevel moduleName:(const char*)moduleName fileName:(const char*)fileName lineNumber:(int)lineNumber funcName:(const char*)funcName format:(NSString *)format, ...;
++ (void)logWithLevel:(int)logLevel moduleName:(const char*)moduleName fileName:(const char*)fileName lineNumber:(int)lineNumber funcName:(const char*)funcName message:(NSString *)message;
++ (void)logWithLevel:(int)logLevel moduleName:(const char*)moduleName fileName:(const char*)fileName lineNumber:(int)lineNumber funcName:(const char*)funcName format:(NSString *)format, ...;
 
 + (BOOL)shouldLog:(int)level;
 

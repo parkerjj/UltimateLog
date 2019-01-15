@@ -12,10 +12,10 @@
 
 @interface MarsWapper : NSObject
 
--(void)initXloggerFilterLevel: (NSUInteger)level path: (NSString*)path prefix: (const char*)prefix;
+-(void)initXloggerFilterLevel: (int)level path: (NSString*)path prefix: (const char*)prefix;
 - (void)deinitXlogger;
 
-- (void)log: (NSUInteger) level tag: (const char*)tag content: (NSString*)content;
+- (void)log: (int) level tag: (const char*)tag content: (NSString*)content;
 - (void)flush;
 @end
 

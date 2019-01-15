@@ -19,16 +19,15 @@
 //
 
 #import "LogHelper.h"
-
 #import <mars/xlog/xlogger.h>
 
 static NSUInteger g_processID = 0;
 
 @implementation LogHelper
 
-+ (void)logWithLevel:(TLogLevel)logLevel moduleName:(const char*)moduleName fileName:(const char*)fileName lineNumber:(int)lineNumber funcName:(const char*)funcName message:(NSString *)message {
++ (void)logWithLevel:(int)logLevel moduleName:(const char*)moduleName fileName:(const char*)fileName lineNumber:(int)lineNumber funcName:(const char*)funcName message:(NSString *)message {
     XLoggerInfo info;
-    info.level = logLevel;
+    info.level = (TLogLevel)logLevel;
     info.tag = moduleName;
     info.filename = nil;
     info.func_name = nil;
@@ -40,7 +39,7 @@ static NSUInteger g_processID = 0;
     xlogger_Write(&info, message.UTF8String);
 }
 
-+ (void)logWithLevel:(TLogLevel)logLevel moduleName:(const char*)moduleName fileName:(const char*)fileName lineNumber:(int)lineNumber funcName:(const char*)funcName format:(NSString *)format, ... {
++ (void)logWithLevel:(int)logLevel moduleName:(const char*)moduleName fileName:(const char*)fileName lineNumber:(int)lineNumber funcName:(const char*)funcName format:(NSString *)format, ... {
     if ([self shouldLog:logLevel]) {
         va_list argList;
         va_start(argList, format);

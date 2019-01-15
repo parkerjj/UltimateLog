@@ -10,24 +10,13 @@
 #import <Foundation/Foundation.h>
 #import "LogUtil.h"
 
-typedef NS_ENUM(NSUInteger, XloggerType) {
-    all = kLevelAll,
-    verbose = kLevelVerbose,
-    debug = kLevelDebug,
-    info = kLevelInfo,
-    warning = kLevelWarn,
-    error = kLevelError,
-    fatal = kLevelFatal,
-    none = kLevelNone
-    
-};
 
 @interface UltimateLogOnMars: NSObject
 
--(void)initXloggerFilterLevel: (XloggerType)level path: (NSString*)path prefix: (const char*)prefix;
+-(void)initXloggerFilterLevel: (int)level path: (NSString*)path prefix: (const char*)prefix;
 - (void)deinitXlogger;
 
-- (void)log: (XloggerType) level tag: (const char*)tag content: (NSString*)content;
+- (void)log: (int) level tag: (const char*)tag content: (NSString*)content;
 - (void)flush;
 
 @end

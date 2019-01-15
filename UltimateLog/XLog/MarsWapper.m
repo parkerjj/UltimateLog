@@ -26,14 +26,14 @@
     return self;
 }
 
--(void)initXloggerFilterLevel: (NSUInteger)level path: (NSString*)path prefix: (const char*)prefix{
+-(void)initXloggerFilterLevel: (int)level path: (NSString*)path prefix: (const char*)prefix{
     [_mars initXloggerFilterLevel:level path:path prefix:prefix];
 }
 - (void)deinitXlogger{
     [_mars deinitXlogger];
 }
 
-- (void)log: (NSUInteger) level tag: (const char*)tag content: (NSString*)content{
+- (void)log: (int) level tag: (const char*)tag content: (NSString*)content{
     [_mars log:level tag:tag content:content];
 }
 

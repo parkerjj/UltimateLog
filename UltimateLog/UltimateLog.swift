@@ -37,7 +37,7 @@ import Foundation
             let encryptSeed = encryptSeed!
             UltimateLog.default.plantEncryptSeed(seed: encryptSeed)
         }
-        _mars.initXloggerFilterLevel(UInt(filterLevel.rawValue), path: logPath, prefix: prefix)
+        _mars.initXloggerFilterLevel(Int32(filterLevel.rawValue), path: logPath, prefix: prefix)
         LoggerUtility.printInitInfo()
     }
     
@@ -45,7 +45,7 @@ import Foundation
         printLog(level: .Verbose, tag: tag, msg: msg)
         
         guard let msg = UltimateLog.default.encrypt(string: msg) else {return}
-        _mars.log(UInt(FilterLevel.Verbose.rawValue), tag: tag, content: msg)
+        _mars.log(Int32(FilterLevel.Verbose.rawValue), tag: tag, content: msg)
     }
     @objc public let v = {(_ tag : String , _ msg : String) in
         UltimateLog.v(tag: tag, msg: msg)
@@ -57,7 +57,7 @@ import Foundation
         printLog(level: .Debug, tag: tag, msg: msg)
         
         guard let msg = UltimateLog.default.encrypt(string: msg) else {return}
-        _mars.log(UInt(FilterLevel.Debug.rawValue), tag: tag, content: msg)
+        _mars.log(Int32(FilterLevel.Debug.rawValue), tag: tag, content: msg)
     }
     @objc public let d = {(_ tag : String , _ msg : String) in
         UltimateLog.d(tag: tag, msg: msg)
@@ -72,7 +72,7 @@ import Foundation
         printLog(level: .Info, tag: tag, msg: msg)
         
         guard let msg = UltimateLog.default.encrypt(string: msg) else {return}
-        _mars.log(UInt(FilterLevel.Info.rawValue), tag: tag, content: msg)
+        _mars.log(Int32(FilterLevel.Info.rawValue), tag: tag, content: msg)
     }
     @objc public let i = {(_ tag : String , _ msg : String) in
         UltimateLog.i(tag: tag, msg: msg)
@@ -86,7 +86,7 @@ import Foundation
         printLog(level: .Warn, tag: tag, msg: msg)
         
         guard let msg = UltimateLog.default.encrypt(string: msg) else {return}
-        _mars.log(UInt(FilterLevel.Warn.rawValue), tag: tag, content: msg)
+        _mars.log(Int32(FilterLevel.Warn.rawValue), tag: tag, content: msg)
         _mars.flush()
     }
     @objc public let w = {(_ tag : String , _ msg : String) in
@@ -100,7 +100,7 @@ import Foundation
         printLog(level: .Error, tag: tag, msg: msg)
         
         guard let msg = UltimateLog.default.encrypt(string: msg) else {return}
-        _mars.log(UInt(FilterLevel.Error.rawValue), tag: tag, content: msg)
+        _mars.log(Int32(FilterLevel.Error.rawValue), tag: tag, content: msg)
         _mars.flush()
     }
     @objc public let e = {(_ tag : String , _ msg : String) in

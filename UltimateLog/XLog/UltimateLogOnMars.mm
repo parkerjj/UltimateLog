@@ -9,13 +9,14 @@
 #import "UltimateLogOnMars.h"
 #import <mars/xlog/appender.h>
 #import <mars/xlog/xlogger.h>
+#import <mars/xlog/xloggerbase.h>
 #import <sys/xattr.h>
 
 @implementation UltimateLogOnMars
 
 // 封装了初始化 Xlogger 方法
 // initialize Xlogger
--(void)initXloggerFilterLevel: (XloggerType)level path: (NSString*)path prefix: (const char*)prefix{
+-(void)initXloggerFilterLevel: (int)level path: (NSString*)path prefix: (const char*)prefix{
     
     
     // set do not backup for logpath
@@ -39,24 +40,24 @@
 
 // 利用微信提供的 LogUtil.h 封装了打印日志的方法
 // print log using LogUtil.h provided by Wechat
--(void) log: (XloggerType) level tag: (const char*)tag content: (NSString*)content{
+-(void) log: (int) level tag: (const char*)tag content: (NSString*)content{
     
     NSString* levelDescription = @"";
     
     switch (level) {
-        case debug:
+        case 1:
             LOG_DEBUG(tag, content);
             levelDescription = @"Debug";
             break;
-        case info:
+        case 2:
             LOG_INFO(tag, content);
             levelDescription = @"Info";
             break;
-        case warning:
+        case 3:
             LOG_WARNING(tag, content);
             levelDescription = @"Warn";
             break;
-        case error:
+        case 4:
             LOG_ERROR(tag, content);
             levelDescription = @"Error";
             break;
