@@ -34,8 +34,8 @@ static NSUInteger g_processID = 0;
     info.func_name = nil;
     info.line = -1;
     gettimeofday(&info.timeval, NULL);
-    info.tid = (uintptr_t)[NSThread currentThread];
-    info.maintid = (uintptr_t)[NSThread mainThread];
+    info.tid = 0;
+    info.maintid = 0;
     info.pid = g_processID;
     xlogger_Write(&info, message.UTF8String);
 }

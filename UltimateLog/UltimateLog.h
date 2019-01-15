@@ -18,5 +18,8 @@ FOUNDATION_EXPORT const unsigned char UltimateLogVersionString[];
 
 
 #import <CommonCrypto/CommonHMAC.h>
-//#import <UltimateLog/LogUtil.h>
-//#import <UltimateLog/LogHelper.h>
+
+
+
+
+#define ULog [[UltimateLog class] default]

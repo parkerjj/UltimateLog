@@ -10,7 +10,7 @@
 		E318E11221EC60BF0007EA07 /* UltimateLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E318E10821EC60BF0007EA07 /* UltimateLog.framework */; };
 		E318E11721EC60BF0007EA07 /* UltimateLogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E318E11621EC60BF0007EA07 /* UltimateLogTests.swift */; };
 		E318E11921EC60BF0007EA07 /* UltimateLog.h in Headers */ = {isa = PBXBuildFile; fileRef = E318E10B21EC60BF0007EA07 /* UltimateLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E318E12321EC60FB0007EA07 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = E318E12221EC60FB0007EA07 /* Logger.swift */; };
+		E318E12321EC60FB0007EA07 /* UltimateLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = E318E12221EC60FB0007EA07 /* UltimateLog.swift */; };
 		E318E16321EC7B1A0007EA07 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E318E16221EC7B190007EA07 /* Security.framework */; };
 		E318E21321EC89770007EA07 /* AES256CBC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E318E21221EC89770007EA07 /* AES256CBC.swift */; };
 		E318E2B221EC8DE50007EA07 /* SHA256.swift in Sources */ = {isa = PBXBuildFile; fileRef = E318E2B121EC8DE50007EA07 /* SHA256.swift */; };
@@ -31,6 +31,15 @@
 		E318E35421ECB53F0007EA07 /* MarsWapper.h in Headers */ = {isa = PBXBuildFile; fileRef = E318E35221ECB53F0007EA07 /* MarsWapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E318E35521ECB53F0007EA07 /* MarsWapper.m in Sources */ = {isa = PBXBuildFile; fileRef = E318E35321ECB53F0007EA07 /* MarsWapper.m */; };
 		E318E35721ECCB6E0007EA07 /* AES.swift in Sources */ = {isa = PBXBuildFile; fileRef = E318E35621ECCB6E0007EA07 /* AES.swift */; };
+		E318E36021ED8BF10007EA07 /* Archive.swift in Sources */ = {isa = PBXBuildFile; fileRef = E318E35921ED8BF10007EA07 /* Archive.swift */; };
+		E318E36121ED8BF10007EA07 /* Archive+Reading.swift in Sources */ = {isa = PBXBuildFile; fileRef = E318E35A21ED8BF10007EA07 /* Archive+Reading.swift */; };
+		E318E36221ED8BF10007EA07 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = E318E35B21ED8BF10007EA07 /* Entry.swift */; };
+		E318E36321ED8BF10007EA07 /* Data+Compression.swift in Sources */ = {isa = PBXBuildFile; fileRef = E318E35C21ED8BF10007EA07 /* Data+Compression.swift */; };
+		E318E36421ED8BF10007EA07 /* Archive+Writing.swift in Sources */ = {isa = PBXBuildFile; fileRef = E318E35D21ED8BF10007EA07 /* Archive+Writing.swift */; };
+		E318E36521ED8BF10007EA07 /* Data+Serialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = E318E35E21ED8BF10007EA07 /* Data+Serialization.swift */; };
+		E318E36621ED8BF10007EA07 /* FileManager+ZIP.swift in Sources */ = {isa = PBXBuildFile; fileRef = E318E35F21ED8BF10007EA07 /* FileManager+ZIP.swift */; };
+		E318E36921ED92D90007EA07 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E318E36821ED92D90007EA07 /* StringExtension.swift */; };
+		E318E36B21EDAA190007EA07 /* LoggerUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = E318E36A21EDAA190007EA07 /* LoggerUtility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +59,7 @@
 		E318E11121EC60BF0007EA07 /* UltimateLogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UltimateLogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E318E11621EC60BF0007EA07 /* UltimateLogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UltimateLogTests.swift; sourceTree = "<group>"; };
 		E318E11821EC60BF0007EA07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E318E12221EC60FB0007EA07 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		E318E12221EC60FB0007EA07 /* UltimateLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UltimateLog.swift; sourceTree = "<group>"; };
 		E318E16221EC7B190007EA07 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		E318E21221EC89770007EA07 /* AES256CBC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AES256CBC.swift; sourceTree = "<group>"; };
 		E318E2B121EC8DE50007EA07 /* SHA256.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHA256.swift; sourceTree = "<group>"; };
@@ -72,6 +81,15 @@
 		E318E35221ECB53F0007EA07 /* MarsWapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MarsWapper.h; sourceTree = "<group>"; };
 		E318E35321ECB53F0007EA07 /* MarsWapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MarsWapper.m; sourceTree = "<group>"; };
 		E318E35621ECCB6E0007EA07 /* AES.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AES.swift; sourceTree = "<group>"; };
+		E318E35921ED8BF10007EA07 /* Archive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Archive.swift; sourceTree = "<group>"; };
+		E318E35A21ED8BF10007EA07 /* Archive+Reading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Archive+Reading.swift"; sourceTree = "<group>"; };
+		E318E35B21ED8BF10007EA07 /* Entry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
+		E318E35C21ED8BF10007EA07 /* Data+Compression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Compression.swift"; sourceTree = "<group>"; };
+		E318E35D21ED8BF10007EA07 /* Archive+Writing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Archive+Writing.swift"; sourceTree = "<group>"; };
+		E318E35E21ED8BF10007EA07 /* Data+Serialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Serialization.swift"; sourceTree = "<group>"; };
+		E318E35F21ED8BF10007EA07 /* FileManager+ZIP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FileManager+ZIP.swift"; sourceTree = "<group>"; };
+		E318E36821ED92D90007EA07 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		E318E36A21EDAA190007EA07 /* LoggerUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerUtility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,7 +145,7 @@
 				E318E10B21EC60BF0007EA07 /* UltimateLog.h */,
 				E318E10C21EC60BF0007EA07 /* Info.plist */,
 				E318E2FB21ECA4890007EA07 /* module.modulemap */,
-				E318E12221EC60FB0007EA07 /* Logger.swift */,
+				E318E12221EC60FB0007EA07 /* UltimateLog.swift */,
 			);
 			path = UltimateLog;
 			sourceTree = "<group>";
@@ -144,9 +162,10 @@
 		E318E15C21EC79F80007EA07 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
-				E318E21221EC89770007EA07 /* AES256CBC.swift */,
-				E318E2B121EC8DE50007EA07 /* SHA256.swift */,
-				E318E35621ECCB6E0007EA07 /* AES.swift */,
+				E318E35821ED8BF10007EA07 /* ZIPFoundation */,
+				E318E36721ED8BFF0007EA07 /* AES */,
+				E318E36821ED92D90007EA07 /* StringExtension.swift */,
+				E318E36A21EDAA190007EA07 /* LoggerUtility.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -188,6 +207,30 @@
 				E318E2F421ECA3290007EA07 /* LogHelper.h */,
 			);
 			path = Component;
+			sourceTree = "<group>";
+		};
+		E318E35821ED8BF10007EA07 /* ZIPFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				E318E35921ED8BF10007EA07 /* Archive.swift */,
+				E318E35A21ED8BF10007EA07 /* Archive+Reading.swift */,
+				E318E35B21ED8BF10007EA07 /* Entry.swift */,
+				E318E35C21ED8BF10007EA07 /* Data+Compression.swift */,
+				E318E35D21ED8BF10007EA07 /* Archive+Writing.swift */,
+				E318E35E21ED8BF10007EA07 /* Data+Serialization.swift */,
+				E318E35F21ED8BF10007EA07 /* FileManager+ZIP.swift */,
+			);
+			path = ZIPFoundation;
+			sourceTree = "<group>";
+		};
+		E318E36721ED8BFF0007EA07 /* AES */ = {
+			isa = PBXGroup;
+			children = (
+				E318E21221EC89770007EA07 /* AES256CBC.swift */,
+				E318E2B121EC8DE50007EA07 /* SHA256.swift */,
+				E318E35621ECCB6E0007EA07 /* AES.swift */,
+			);
+			path = AES;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,14 +347,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E318E36221ED8BF10007EA07 /* Entry.swift in Sources */,
+				E318E36521ED8BF10007EA07 /* Data+Serialization.swift in Sources */,
+				E318E36021ED8BF10007EA07 /* Archive.swift in Sources */,
+				E318E36321ED8BF10007EA07 /* Data+Compression.swift in Sources */,
+				E318E36421ED8BF10007EA07 /* Archive+Writing.swift in Sources */,
+				E318E36121ED8BF10007EA07 /* Archive+Reading.swift in Sources */,
 				E318E2BE21EC9F3D0007EA07 /* UltimateLogOnMars.mm in Sources */,
 				E318E35521ECB53F0007EA07 /* MarsWapper.m in Sources */,
+				E318E36921ED92D90007EA07 /* StringExtension.swift in Sources */,
 				E318E2F821ECA3290007EA07 /* LogHelper.mm in Sources */,
+				E318E36621ED8BF10007EA07 /* FileManager+ZIP.swift in Sources */,
 				E318E21321EC89770007EA07 /* AES256CBC.swift in Sources */,
 				E318E2F621ECA3290007EA07 /* LogUtil.m in Sources */,
-				E318E12321EC60FB0007EA07 /* Logger.swift in Sources */,
+				E318E12321EC60FB0007EA07 /* UltimateLog.swift in Sources */,
 				E318E2F521ECA3290007EA07 /* log_crypt.cc in Sources */,
 				E318E35721ECCB6E0007EA07 /* AES.swift in Sources */,
+				E318E36B21EDAA190007EA07 /* LoggerUtility.swift in Sources */,
 				E318E2B221EC8DE50007EA07 /* SHA256.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

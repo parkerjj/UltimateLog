@@ -1,8 +1,9 @@
 framework module UltimateLog {
     umbrella header "./UltimateLog.h"
-    header "MarsWapper.h"
-
     
+    header "MarsWapper.h"
+//    header "UltimateLog-Swift.h"
+
     export *
     module * { export * }
 

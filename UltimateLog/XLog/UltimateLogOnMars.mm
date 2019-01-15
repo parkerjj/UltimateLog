@@ -17,17 +17,16 @@
 // initialize Xlogger
 -(void)initXloggerFilterLevel: (XloggerType)level path: (NSString*)path prefix: (const char*)prefix{
     
-    NSString* logPath = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0] stringByAppendingString:path];
     
     // set do not backup for logpath
     const char* attrName = "io.jinkey";
     u_int8_t attrValue = 1;
-    setxattr([logPath UTF8String], attrName, &attrValue, sizeof(attrValue), 0, 0);
+    setxattr([path UTF8String], attrName, &attrValue, sizeof(attrValue), 0, 0);
     
     // init xlog
     xlogger_SetLevel((TLogLevel)level);
     appender_set_console_log(false);
-    appender_open(kAppednerAsync, [logPath UTF8String], prefix, "");
+    appender_open(kAppednerAsync, [path UTF8String], prefix, "");
     
 }
 

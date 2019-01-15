@@ -23,14 +23,24 @@ class UltimateLogTests: XCTestCase {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         
-        Logger.setup(prefix: "TEST", filterLevel: .Verbose, encryptSeed: "TEST")
+        UltimateLog.setup(prefix: "TEST", filterLevel: .Verbose, encryptSeed: "TEST")
         
-        Logger.v(tag: "TEST", msg: "This is VERBOSE")
-        Logger.d(tag: "TEST", msg: "This is DEBUG")
-        Logger.i(tag: "TEST", msg: "This is INFO")
-        Logger.w(tag: "TEST", msg: "This is WARNING")
-        Logger.e(tag: "TEST", msg: "This is ERROR")
+        UltimateLog.v(tag: "TEST", msg: "This is VERBOSE")
+        UltimateLog.d(tag: "TEST", msg: "This is DEBUG")
+        UltimateLog.i(tag: "TEST", msg: "This is INFO")
+        UltimateLog.w(tag: "TEST", msg: "This is WARNING")
+        UltimateLog.e(tag: "TEST", msg: "This is ERROR")
+        
+        
+        
+        let path = UltimateLog.zipLog()
+        UltimateLog.v(msg: path ?? "")
+        
+
     }
+    
+    
+    
 
     func testPerformanceExample() {
         // This is an example of a performance test case.
