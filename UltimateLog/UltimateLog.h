@@ -23,3 +23,5 @@ FOUNDATION_EXPORT const unsigned char UltimateLogVersionString[];
 
 
 #define ULog [[UltimateLog class] default]
+#define LogFormat( s, ... )     [NSString stringWithFormat:(s), ##__VA_ARGS__]
+

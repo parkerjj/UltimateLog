@@ -176,7 +176,7 @@ extension UltimateLog {
 // MARK: - Zip
 extension UltimateLog {
     
-    open class func zipLog() -> String?{
+    @objc open class func zipLog() -> String?{
         let tmpDir = NSTemporaryDirectory()
 
         
