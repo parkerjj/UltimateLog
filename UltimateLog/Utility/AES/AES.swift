@@ -29,7 +29,7 @@ extension Data{
         var cryptData       = Data(count:cryptLength)
         let ivData          = "ABCDEFGHIJKLMNOP".data(using: .utf8)!   // 16 bytes for AES128
 
-        let keyLength = size_t(kCCKeySizeAES128)
+        let keyLength = size_t(kCCKeySizeAES256)
         let options = CCOptions(kCCOptionPKCS7Padding)
         
         
