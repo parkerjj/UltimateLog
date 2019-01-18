@@ -22,7 +22,6 @@
 		E318E2F821ECA3290007EA07 /* LogHelper.mm in Sources */ = {isa = PBXBuildFile; fileRef = E318E2F221ECA3290007EA07 /* LogHelper.mm */; };
 		E318E2F921ECA3290007EA07 /* LogUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = E318E2F321ECA3290007EA07 /* LogUtil.h */; };
 		E318E2FA21ECA3290007EA07 /* LogHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = E318E2F421ECA3290007EA07 /* LogHelper.h */; };
-		E318E34721ECB0C90007EA07 /* mars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E318E34621ECB0C90007EA07 /* mars.framework */; };
 		E318E34921ECB2340007EA07 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E318E34821ECB2340007EA07 /* CoreTelephony.framework */; };
 		E318E34B21ECB2840007EA07 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E318E34A21ECB2840007EA07 /* Foundation.framework */; };
 		E318E34D21ECB2890007EA07 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E318E34C21ECB2890007EA07 /* SystemConfiguration.framework */; };
@@ -40,6 +39,24 @@
 		E318E36621ED8BF10007EA07 /* FileManager+ZIP.swift in Sources */ = {isa = PBXBuildFile; fileRef = E318E35F21ED8BF10007EA07 /* FileManager+ZIP.swift */; };
 		E318E36921ED92D90007EA07 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E318E36821ED92D90007EA07 /* StringExtension.swift */; };
 		E318E36B21EDAA190007EA07 /* LoggerUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = E318E36A21EDAA190007EA07 /* LoggerUtility.swift */; };
+		E38329E721F210AA00386ECF /* projdef.h in Headers */ = {isa = PBXBuildFile; fileRef = E38329D521F210A900386ECF /* projdef.h */; };
+		E38329E821F210AA00386ECF /* string_cast.h in Headers */ = {isa = PBXBuildFile; fileRef = E38329D621F210A900386ECF /* string_cast.h */; };
+		E38329E921F210AA00386ECF /* http.h in Headers */ = {isa = PBXBuildFile; fileRef = E38329D721F210A900386ECF /* http.h */; };
+		E38329EA21F210AA00386ECF /* has_member.h in Headers */ = {isa = PBXBuildFile; fileRef = E38329D821F210A900386ECF /* has_member.h */; };
+		E38329EB21F210AA00386ECF /* comm_data.h in Headers */ = {isa = PBXBuildFile; fileRef = E38329D921F210A900386ECF /* comm_data.h */; };
+		E38329EC21F210AA00386ECF /* verinfo.h in Headers */ = {isa = PBXBuildFile; fileRef = E38329DA21F210A900386ECF /* verinfo.h */; };
+		E38329ED21F210AA00386ECF /* ThreadOperationQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = E38329DB21F210A900386ECF /* ThreadOperationQueue.h */; };
+		E38329EE21F210AA00386ECF /* time_utils.h in Headers */ = {isa = PBXBuildFile; fileRef = E38329DC21F210A900386ECF /* time_utils.h */; };
+		E38329EF21F210AA00386ECF /* autobuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = E38329DD21F210A900386ECF /* autobuffer.h */; };
+		E38329F021F210AA00386ECF /* nat64_prefix_util.h in Headers */ = {isa = PBXBuildFile; fileRef = E38329DE21F210A900386ECF /* nat64_prefix_util.h */; };
+		E38329F121F210AA00386ECF /* local_ipstack.h in Headers */ = {isa = PBXBuildFile; fileRef = E38329DF21F210A900386ECF /* local_ipstack.h */; };
+		E38329F221F210AA00386ECF /* scope_autoreleasepool.h in Headers */ = {isa = PBXBuildFile; fileRef = E38329E021F210A900386ECF /* scope_autoreleasepool.h */; };
+		E38329F321F210AA00386ECF /* strutil.h in Headers */ = {isa = PBXBuildFile; fileRef = E38329E121F210A900386ECF /* strutil.h */; };
+		E38329F421F210AA00386ECF /* appender.h in Headers */ = {isa = PBXBuildFile; fileRef = E38329E321F210A900386ECF /* appender.h */; };
+		E38329F521F210AA00386ECF /* xlogger.h in Headers */ = {isa = PBXBuildFile; fileRef = E38329E421F210A900386ECF /* xlogger.h */; };
+		E38329F621F210AA00386ECF /* xloggerbase.h in Headers */ = {isa = PBXBuildFile; fileRef = E38329E521F210A900386ECF /* xloggerbase.h */; };
+		E38329F721F210AA00386ECF /* preprocessor.h in Headers */ = {isa = PBXBuildFile; fileRef = E38329E621F210A900386ECF /* preprocessor.h */; };
+		E38329F921F212AD00386ECF /* mars.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E38329F821F212AC00386ECF /* mars.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,7 +89,6 @@
 		E318E2F321ECA3290007EA07 /* LogUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogUtil.h; sourceTree = "<group>"; };
 		E318E2F421ECA3290007EA07 /* LogHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogHelper.h; sourceTree = "<group>"; };
 		E318E2FB21ECA4890007EA07 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
-		E318E34621ECB0C90007EA07 /* mars.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = mars.framework; path = Framework/mars.framework; sourceTree = "<group>"; };
 		E318E34821ECB2340007EA07 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		E318E34A21ECB2840007EA07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E318E34C21ECB2890007EA07 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -90,6 +106,24 @@
 		E318E35F21ED8BF10007EA07 /* FileManager+ZIP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FileManager+ZIP.swift"; sourceTree = "<group>"; };
 		E318E36821ED92D90007EA07 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		E318E36A21EDAA190007EA07 /* LoggerUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerUtility.swift; sourceTree = "<group>"; };
+		E38329D521F210A900386ECF /* projdef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = projdef.h; sourceTree = "<group>"; };
+		E38329D621F210A900386ECF /* string_cast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = string_cast.h; sourceTree = "<group>"; };
+		E38329D721F210A900386ECF /* http.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = http.h; sourceTree = "<group>"; };
+		E38329D821F210A900386ECF /* has_member.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = has_member.h; sourceTree = "<group>"; };
+		E38329D921F210A900386ECF /* comm_data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = comm_data.h; sourceTree = "<group>"; };
+		E38329DA21F210A900386ECF /* verinfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = verinfo.h; sourceTree = "<group>"; };
+		E38329DB21F210A900386ECF /* ThreadOperationQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreadOperationQueue.h; sourceTree = "<group>"; };
+		E38329DC21F210A900386ECF /* time_utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = time_utils.h; sourceTree = "<group>"; };
+		E38329DD21F210A900386ECF /* autobuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = autobuffer.h; sourceTree = "<group>"; };
+		E38329DE21F210A900386ECF /* nat64_prefix_util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nat64_prefix_util.h; sourceTree = "<group>"; };
+		E38329DF21F210A900386ECF /* local_ipstack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = local_ipstack.h; sourceTree = "<group>"; };
+		E38329E021F210A900386ECF /* scope_autoreleasepool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scope_autoreleasepool.h; sourceTree = "<group>"; };
+		E38329E121F210A900386ECF /* strutil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = strutil.h; sourceTree = "<group>"; };
+		E38329E321F210A900386ECF /* appender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = appender.h; sourceTree = "<group>"; };
+		E38329E421F210A900386ECF /* xlogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xlogger.h; sourceTree = "<group>"; };
+		E38329E521F210A900386ECF /* xloggerbase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xloggerbase.h; sourceTree = "<group>"; };
+		E38329E621F210A900386ECF /* preprocessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = preprocessor.h; sourceTree = "<group>"; };
+		E38329F821F212AC00386ECF /* mars.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = mars.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,13 +131,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E38329F921F212AD00386ECF /* mars.a in Frameworks */,
 				E318E35121ECB29B0007EA07 /* libresolv.9.tbd in Frameworks */,
 				E318E34F21ECB2920007EA07 /* libz.tbd in Frameworks */,
 				E318E34D21ECB2890007EA07 /* SystemConfiguration.framework in Frameworks */,
 				E318E34B21ECB2840007EA07 /* Foundation.framework in Frameworks */,
 				E318E34921ECB2340007EA07 /* CoreTelephony.framework in Frameworks */,
 				E318E16321EC7B1A0007EA07 /* Security.framework in Frameworks */,
-				E318E34721ECB0C90007EA07 /* mars.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +174,7 @@
 		E318E10A21EC60BF0007EA07 /* UltimateLog */ = {
 			isa = PBXGroup;
 			children = (
+				E38329D321F210A900386ECF /* XLogHeader */,
 				E318E2ED21ECA31E0007EA07 /* XLog */,
 				E318E15C21EC79F80007EA07 /* Utility */,
 				E318E10B21EC60BF0007EA07 /* UltimateLog.h */,
@@ -173,12 +208,12 @@
 		E318E16121EC7B190007EA07 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E38329F821F212AC00386ECF /* mars.a */,
 				E318E35021ECB29B0007EA07 /* libresolv.9.tbd */,
 				E318E34E21ECB2920007EA07 /* libz.tbd */,
 				E318E34C21ECB2890007EA07 /* SystemConfiguration.framework */,
 				E318E34A21ECB2840007EA07 /* Foundation.framework */,
 				E318E34821ECB2340007EA07 /* CoreTelephony.framework */,
-				E318E34621ECB0C90007EA07 /* mars.framework */,
 				E318E16221EC7B190007EA07 /* Security.framework */,
 			);
 			name = Frameworks;
@@ -233,6 +268,46 @@
 			path = AES;
 			sourceTree = "<group>";
 		};
+		E38329D321F210A900386ECF /* XLogHeader */ = {
+			isa = PBXGroup;
+			children = (
+				E38329D421F210A900386ECF /* comm */,
+				E38329E221F210A900386ECF /* xlog */,
+			);
+			path = XLogHeader;
+			sourceTree = "<group>";
+		};
+		E38329D421F210A900386ECF /* comm */ = {
+			isa = PBXGroup;
+			children = (
+				E38329D521F210A900386ECF /* projdef.h */,
+				E38329D621F210A900386ECF /* string_cast.h */,
+				E38329D721F210A900386ECF /* http.h */,
+				E38329D821F210A900386ECF /* has_member.h */,
+				E38329D921F210A900386ECF /* comm_data.h */,
+				E38329DA21F210A900386ECF /* verinfo.h */,
+				E38329DB21F210A900386ECF /* ThreadOperationQueue.h */,
+				E38329DC21F210A900386ECF /* time_utils.h */,
+				E38329DD21F210A900386ECF /* autobuffer.h */,
+				E38329DE21F210A900386ECF /* nat64_prefix_util.h */,
+				E38329DF21F210A900386ECF /* local_ipstack.h */,
+				E38329E021F210A900386ECF /* scope_autoreleasepool.h */,
+				E38329E121F210A900386ECF /* strutil.h */,
+			);
+			path = comm;
+			sourceTree = "<group>";
+		};
+		E38329E221F210A900386ECF /* xlog */ = {
+			isa = PBXGroup;
+			children = (
+				E38329E321F210A900386ECF /* appender.h */,
+				E38329E421F210A900386ECF /* xlogger.h */,
+				E38329E521F210A900386ECF /* xloggerbase.h */,
+				E38329E621F210A900386ECF /* preprocessor.h */,
+			);
+			path = xlog;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -240,11 +315,28 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E38329F021F210AA00386ECF /* nat64_prefix_util.h in Headers */,
+				E38329E921F210AA00386ECF /* http.h in Headers */,
+				E38329F521F210AA00386ECF /* xlogger.h in Headers */,
+				E38329F721F210AA00386ECF /* preprocessor.h in Headers */,
+				E38329F221F210AA00386ECF /* scope_autoreleasepool.h in Headers */,
+				E38329F421F210AA00386ECF /* appender.h in Headers */,
 				E318E11921EC60BF0007EA07 /* UltimateLog.h in Headers */,
+				E38329F121F210AA00386ECF /* local_ipstack.h in Headers */,
 				E318E35421ECB53F0007EA07 /* MarsWapper.h in Headers */,
+				E38329F321F210AA00386ECF /* strutil.h in Headers */,
+				E38329EE21F210AA00386ECF /* time_utils.h in Headers */,
+				E38329EA21F210AA00386ECF /* has_member.h in Headers */,
+				E38329EC21F210AA00386ECF /* verinfo.h in Headers */,
 				E318E2F721ECA3290007EA07 /* log_crypt.h in Headers */,
+				E38329EF21F210AA00386ECF /* autobuffer.h in Headers */,
 				E318E2FA21ECA3290007EA07 /* LogHelper.h in Headers */,
+				E38329ED21F210AA00386ECF /* ThreadOperationQueue.h in Headers */,
+				E38329E821F210AA00386ECF /* string_cast.h in Headers */,
 				E318E2BD21EC9F3D0007EA07 /* UltimateLogOnMars.h in Headers */,
+				E38329E721F210AA00386ECF /* projdef.h in Headers */,
+				E38329EB21F210AA00386ECF /* comm_data.h in Headers */,
+				E38329F621F210AA00386ECF /* xloggerbase.h in Headers */,
 				E318E2F921ECA3290007EA07 /* LogUtil.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -540,6 +632,10 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.IOFutureTech.UltimateLog;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -571,6 +667,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.IOFutureTech.UltimateLog;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";

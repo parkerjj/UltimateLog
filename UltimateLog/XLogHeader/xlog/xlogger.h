@@ -24,7 +24,7 @@
 #include <sys/cdefs.h>
 #include <sys/time.h>
 
-#include "mars/comm/string_cast.h"
+#include "string_cast.h"
 #include "xloggerbase.h"
 #include "preprocessor.h"
 

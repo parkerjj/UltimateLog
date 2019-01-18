@@ -7,9 +7,9 @@
 //
 
 #import "UltimateLogOnMars.h"
-#import <mars/xlog/appender.h>
-#import <mars/xlog/xlogger.h>
-#import <mars/xlog/xloggerbase.h>
+#import "appender.h"
+#import "xlogger.h"
+#import "xloggerbase.h"
 #import <sys/xattr.h>
 
 @implementation UltimateLogOnMars
