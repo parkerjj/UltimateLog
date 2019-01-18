@@ -47,7 +47,6 @@
 		E38329EC21F210AA00386ECF /* verinfo.h in Headers */ = {isa = PBXBuildFile; fileRef = E38329DA21F210A900386ECF /* verinfo.h */; };
 		E38329ED21F210AA00386ECF /* ThreadOperationQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = E38329DB21F210A900386ECF /* ThreadOperationQueue.h */; };
 		E38329EE21F210AA00386ECF /* time_utils.h in Headers */ = {isa = PBXBuildFile; fileRef = E38329DC21F210A900386ECF /* time_utils.h */; };
-		E38329EF21F210AA00386ECF /* autobuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = E38329DD21F210A900386ECF /* autobuffer.h */; };
 		E38329F021F210AA00386ECF /* nat64_prefix_util.h in Headers */ = {isa = PBXBuildFile; fileRef = E38329DE21F210A900386ECF /* nat64_prefix_util.h */; };
 		E38329F121F210AA00386ECF /* local_ipstack.h in Headers */ = {isa = PBXBuildFile; fileRef = E38329DF21F210A900386ECF /* local_ipstack.h */; };
 		E38329F221F210AA00386ECF /* scope_autoreleasepool.h in Headers */ = {isa = PBXBuildFile; fileRef = E38329E021F210A900386ECF /* scope_autoreleasepool.h */; };
@@ -114,7 +113,6 @@
 		E38329DA21F210A900386ECF /* verinfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = verinfo.h; sourceTree = "<group>"; };
 		E38329DB21F210A900386ECF /* ThreadOperationQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreadOperationQueue.h; sourceTree = "<group>"; };
 		E38329DC21F210A900386ECF /* time_utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = time_utils.h; sourceTree = "<group>"; };
-		E38329DD21F210A900386ECF /* autobuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = autobuffer.h; sourceTree = "<group>"; };
 		E38329DE21F210A900386ECF /* nat64_prefix_util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nat64_prefix_util.h; sourceTree = "<group>"; };
 		E38329DF21F210A900386ECF /* local_ipstack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = local_ipstack.h; sourceTree = "<group>"; };
 		E38329E021F210A900386ECF /* scope_autoreleasepool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scope_autoreleasepool.h; sourceTree = "<group>"; };
@@ -288,7 +286,6 @@
 				E38329DA21F210A900386ECF /* verinfo.h */,
 				E38329DB21F210A900386ECF /* ThreadOperationQueue.h */,
 				E38329DC21F210A900386ECF /* time_utils.h */,
-				E38329DD21F210A900386ECF /* autobuffer.h */,
 				E38329DE21F210A900386ECF /* nat64_prefix_util.h */,
 				E38329DF21F210A900386ECF /* local_ipstack.h */,
 				E38329E021F210A900386ECF /* scope_autoreleasepool.h */,
@@ -329,7 +326,6 @@
 				E38329EA21F210AA00386ECF /* has_member.h in Headers */,
 				E38329EC21F210AA00386ECF /* verinfo.h in Headers */,
 				E318E2F721ECA3290007EA07 /* log_crypt.h in Headers */,
-				E38329EF21F210AA00386ECF /* autobuffer.h in Headers */,
 				E318E2FA21ECA3290007EA07 /* LogHelper.h in Headers */,
 				E38329ED21F210AA00386ECF /* ThreadOperationQueue.h in Headers */,
 				E38329E821F210AA00386ECF /* string_cast.h in Headers */,
