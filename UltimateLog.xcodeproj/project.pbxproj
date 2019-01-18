@@ -55,8 +55,8 @@
 		E38329F521F210AA00386ECF /* xlogger.h in Headers */ = {isa = PBXBuildFile; fileRef = E38329E421F210A900386ECF /* xlogger.h */; };
 		E38329F621F210AA00386ECF /* xloggerbase.h in Headers */ = {isa = PBXBuildFile; fileRef = E38329E521F210A900386ECF /* xloggerbase.h */; };
 		E38329F721F210AA00386ECF /* preprocessor.h in Headers */ = {isa = PBXBuildFile; fileRef = E38329E621F210A900386ECF /* preprocessor.h */; };
-		E38329F921F212AD00386ECF /* mars.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E38329F821F212AC00386ECF /* mars.a */; };
 		E38329FC21F2177300386ECF /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E38329FB21F2177300386ECF /* libc++.tbd */; };
+		E38329FE21F21BDA00386ECF /* libMars.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E38329FD21F21BDA00386ECF /* libMars.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,8 +122,8 @@
 		E38329E421F210A900386ECF /* xlogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xlogger.h; sourceTree = "<group>"; };
 		E38329E521F210A900386ECF /* xloggerbase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xloggerbase.h; sourceTree = "<group>"; };
 		E38329E621F210A900386ECF /* preprocessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = preprocessor.h; sourceTree = "<group>"; };
-		E38329F821F212AC00386ECF /* mars.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = mars.a; sourceTree = "<group>"; };
 		E38329FB21F2177300386ECF /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		E38329FD21F21BDA00386ECF /* libMars.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMars.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,8 +131,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E38329FE21F21BDA00386ECF /* libMars.a in Frameworks */,
 				E38329FC21F2177300386ECF /* libc++.tbd in Frameworks */,
-				E38329F921F212AD00386ECF /* mars.a in Frameworks */,
 				E318E35121ECB29B0007EA07 /* libresolv.9.tbd in Frameworks */,
 				E318E34F21ECB2920007EA07 /* libz.tbd in Frameworks */,
 				E318E34D21ECB2890007EA07 /* SystemConfiguration.framework in Frameworks */,
@@ -209,8 +209,8 @@
 		E318E16121EC7B190007EA07 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E38329FD21F21BDA00386ECF /* libMars.a */,
 				E38329FB21F2177300386ECF /* libc++.tbd */,
-				E38329F821F212AC00386ECF /* mars.a */,
 				E318E35021ECB29B0007EA07 /* libresolv.9.tbd */,
 				E318E34E21ECB2920007EA07 /* libz.tbd */,
 				E318E34C21ECB2890007EA07 /* SystemConfiguration.framework */,
