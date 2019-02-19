@@ -27,7 +27,7 @@ import Foundation
     static var tag = ""
     private var _encryptKey : Data? = nil
     static let logPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] + "/UltimateLog/"
-    
+    static var logsCount = 0;
     
 
     
@@ -42,10 +42,15 @@ import Foundation
     }
     
     @objc public static func v(tag : String = "ULog" , msg : String){
+        logsCountPlus()
+        
         printLog(level: .Verbose, tag: tag, msg: msg)
         
-        guard let msg = UltimateLog.default.encrypt(string: msg) else {return}
-        _mars.log(Int32(FilterLevel.Verbose.rawValue), tag: tag, content: msg)
+        guard let encryptMsg = UltimateLog.default.encrypt(string: msg) else {
+            _mars.log(Int32(FilterLevel.Verbose.rawValue), tag: tag, content: msg)
+            return
+        }
+        _mars.log(Int32(FilterLevel.Verbose.rawValue), tag: tag, content: encryptMsg)
     }
     @objc public let v = {(_ tag : String , _ msg : String) in
         UltimateLog.v(tag: tag, msg: msg)
@@ -54,10 +59,16 @@ import Foundation
     
     
     @objc public static func d(tag : String = "ULog" , msg : String){
+        logsCountPlus()
+        
+        
         printLog(level: .Debug, tag: tag, msg: msg)
         
-        guard let msg = UltimateLog.default.encrypt(string: msg) else {return}
-        _mars.log(Int32(FilterLevel.Debug.rawValue), tag: tag, content: msg)
+        guard let encryptMsg = UltimateLog.default.encrypt(string: msg) else {
+            _mars.log(Int32(FilterLevel.Debug.rawValue), tag: tag, content: msg)
+            return
+        }
+        _mars.log(Int32(FilterLevel.Debug.rawValue), tag: tag, content: encryptMsg)
     }
     @objc public let d = {(_ tag : String , _ msg : String) in
         UltimateLog.d(tag: tag, msg: msg)
@@ -69,10 +80,16 @@ import Foundation
     
     
     @objc public static func i(tag : String = "ULog" , msg : String){
+        logsCountPlus()
+        
+        
         printLog(level: .Info, tag: tag, msg: msg)
         
-        guard let msg = UltimateLog.default.encrypt(string: msg) else {return}
-        _mars.log(Int32(FilterLevel.Info.rawValue), tag: tag, content: msg)
+        guard let encryptMsg = UltimateLog.default.encrypt(string: msg) else {
+            _mars.log(Int32(FilterLevel.Info.rawValue), tag: tag, content: msg)
+            return
+        }
+        _mars.log(Int32(FilterLevel.Info.rawValue), tag: tag, content: encryptMsg)
     }
     @objc public let i = {(_ tag : String , _ msg : String) in
         UltimateLog.i(tag: tag, msg: msg)
@@ -83,10 +100,16 @@ import Foundation
     
     
     @objc public static func w(tag : String = "ULog" , msg : String){
+        logsCountPlus()
+        
+        
         printLog(level: .Warn, tag: tag, msg: msg)
         
-        guard let msg = UltimateLog.default.encrypt(string: msg) else {return}
-        _mars.log(Int32(FilterLevel.Warn.rawValue), tag: tag, content: msg)
+        guard let encryptMsg = UltimateLog.default.encrypt(string: msg) else {
+            _mars.log(Int32(FilterLevel.Warn.rawValue), tag: tag, content: msg)
+            return
+        }
+        _mars.log(Int32(FilterLevel.Warn.rawValue), tag: tag, content: encryptMsg)
         _mars.flush()
     }
     @objc public let w = {(_ tag : String , _ msg : String) in
@@ -97,10 +120,16 @@ import Foundation
     
     
     @objc public static func e(tag : String = "ULog" , msg : String){
+        logsCountPlus()
+        
+        
         printLog(level: .Error, tag: tag, msg: msg)
         
-        guard let msg = UltimateLog.default.encrypt(string: msg) else {return}
-        _mars.log(Int32(FilterLevel.Error.rawValue), tag: tag, content: msg)
+        guard let encryptMsg = UltimateLog.default.encrypt(string: msg) else {
+            _mars.log(Int32(FilterLevel.Error.rawValue), tag: tag, content: msg)
+            return
+        }
+        _mars.log(Int32(FilterLevel.Error.rawValue), tag: tag, content: encryptMsg)
         _mars.flush()
     }
     @objc public let e = {(_ tag : String , _ msg : String) in
@@ -206,4 +235,18 @@ extension UltimateLog {
         return destinationURL.path
     }
     
+}
+
+
+// MARK: - Flush
+extension UltimateLog {
+    static func logsCountPlus() {
+        logsCount = logsCount + 1;
+        
+        if logsCount > 30 {
+            _mars.flush()
+            
+            logsCount = 0;
+        }
+    }
 }
