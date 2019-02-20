@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "UltimateLog"
-  spec.version      = "0.0.8"
+  spec.version      = "0.0.9"
   spec.summary      = "A pretty Log Util for iOS."
   spec.swift_version = "4.2"
 
@@ -90,9 +90,9 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "UltimateLog/**/*.{h,m,mm,swift}" 
+  #spec.source_files  = "UltimateLog/**/*.{h,m,mm,swift}" 
   # spec.exclude_files = "Classes/Exclude"
-  spec.public_header_files = ['UltimateLog/UltimateLog.h','UltimateLog/UltimateLog-Swift.h' , 'UltimateLog/XLog/MarsWapper.h']
+  #spec.public_header_files = ['UltimateLog/UltimateLog.h','UltimateLog/UltimateLog-Swift.h' , 'UltimateLog/XLog/MarsWapper.h']
   spec.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.2' }
 
 
@@ -108,7 +108,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.resource  = "Framework/mars.framework"
-  # spec.vendored_frameworks = 'Framework/mars.framework'
+  spec.vendored_frameworks = 'Framework/UltimateLog.framework'
   # spec.dependency = "mars"
 
 
@@ -127,9 +127,9 @@ Pod::Spec.new do |spec|
   # spec.frameworks = "SomeFramework", "AnotherFramework"
 
   # spec.library   = "iconv"
-  spec.libraries = "resolv", "z" , "c++" , "Mars"
-  spec.preserve_paths           = 'libMars.a'
-  spec.vendored_libraries       = 'libMars.a'
+  spec.libraries = "resolv", "z" , "c++" 
+  #spec.preserve_paths           = 'libMars.a'
+  #spec.vendored_libraries       = 'libMars.a'
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
