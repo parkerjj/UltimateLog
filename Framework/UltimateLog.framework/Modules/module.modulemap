@@ -1,0 +1,15 @@
+framework module UltimateLog {
+    umbrella header "./UltimateLog.h"
+    
+    header "MarsWapper.h"
+//    header "UltimateLog-Swift.h"
+
+    export *
+    module * { export * }
+
+}
+
+module UltimateLog.Swift {
+    header "UltimateLog-Swift.h"
+    requires objc
+}

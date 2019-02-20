@@ -6,6 +6,20 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		E3A25135221D4355009AF6D6 /* Universal */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = E3A25138221D4355009AF6D6 /* Build configuration list for PBXAggregateTarget "Universal" */;
+			buildPhases = (
+				E3A25139221D4358009AF6D6 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Universal;
+			productName = Universal;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		E318E11221EC60BF0007EA07 /* UltimateLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E318E10821EC60BF0007EA07 /* UltimateLog.framework */; };
 		E318E11721EC60BF0007EA07 /* UltimateLogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E318E11621EC60BF0007EA07 /* UltimateLogTests.swift */; };
@@ -397,6 +411,9 @@
 					E318E11021EC60BF0007EA07 = {
 						CreatedOnToolsVersion = 10.1;
 					};
+					E3A25135221D4355009AF6D6 = {
+						CreatedOnToolsVersion = 10.1;
+					};
 				};
 			};
 			buildConfigurationList = E318E10221EC60BE0007EA07 /* Build configuration list for PBXProject "UltimateLog" */;
@@ -414,6 +431,7 @@
 			targets = (
 				E318E10721EC60BF0007EA07 /* UltimateLog */,
 				E318E11021EC60BF0007EA07 /* UltimateLogTests */,
+				E3A25135221D4355009AF6D6 /* Universal */,
 			);
 		};
 /* End PBXProject section */
@@ -434,6 +452,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E3A25139221D4358009AF6D6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Merge Script\n\n# 1\n# Set bash script to exit immediately if any commands fail.\n#set -e\n\n# 2\n# Setup some constants for use later on.\nFRAMEWORK_NAME=${PROJECT_NAME}\n\n# 3\n# If remnants from a previous build exist, delete them.\nif [ -d \"${SRCROOT}/Framework\" ]; then\nrm -rf \"${SRCROOT}/Framework\"\nfi\n\n# 4\n# Build the framework for device and for simulator (using\n# all needed architectures).\nxcodebuild -target \"${FRAMEWORK_NAME}\" -configuration Release -arch arm64 only_active_arch=no defines_module=yes -sdk \"iphoneos\"\nxcodebuild -target \"${FRAMEWORK_NAME}\" -configuration Release -arch x86_64 only_active_arch=no defines_module=yes -sdk \"iphonesimulator\"\n\n# 5\n# Remove .framework file if exists on Desktop from previous run.\nif [ -d \"${SRCROOT}/Framework/${FRAMEWORK_NAME}.framework\" ]; then\nrm -rf \"${SRCROOT}/Framework/${FRAMEWORK_NAME}.framework\"\nfi\n\n# 6\n# Copy the device version of framework to Desktop.\nmkdir \"${SRCROOT}/Framework/\"\ncp -R \"${SRCROOT}/build/Release-iphoneos/${FRAMEWORK_NAME}.framework\" \"${SRCROOT}/Framework/${FRAMEWORK_NAME}.framework\"\n\n\n# 7\n# Replace the framework executable within the framework with\n# a new version created by merging the device and simulator\n# frameworks' executables with lipo.\nlipo -create -output \"${SRCROOT}/Framework/${FRAMEWORK_NAME}.framework/${FRAMEWORK_NAME}\" \"${SRCROOT}/build/Release-iphoneos/${FRAMEWORK_NAME}.framework/${FRAMEWORK_NAME}\" \"${SRCROOT}/build/Release-iphonesimulator/${FRAMEWORK_NAME}.framework/${FRAMEWORK_NAME}\"\n\n# 8\n# Copy the Swift module mappings for the simulator into the\n# framework.  The device mappings already exist from step 6.\ncp -r \"${SRCROOT}/build/Release-iphonesimulator/${FRAMEWORK_NAME}.framework/Modules/${FRAMEWORK_NAME}.swiftmodule/\" \"${SRCROOT}/Framework/${FRAMEWORK_NAME}.framework/Modules/${FRAMEWORK_NAME}.swiftmodule\"\n\n# 9\n# Delete the most recent build.\n#if [ -d \"${SRCROOT}/build\" ]; then\n#rm -rf \"${SRCROOT}/build\"\n#fi\n#open \"${INSTALL_DIR}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E318E10421EC60BF0007EA07 /* Sources */ = {
@@ -709,6 +747,24 @@
 			};
 			name = Release;
 		};
+		E3A25136221D4355009AF6D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5D988FC44C;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E3A25137221D4355009AF6D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5D988FC44C;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -735,6 +791,15 @@
 			buildConfigurations = (
 				E318E12021EC60BF0007EA07 /* Debug */,
 				E318E12121EC60BF0007EA07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3A25138221D4355009AF6D6 /* Build configuration list for PBXAggregateTarget "Universal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3A25136221D4355009AF6D6 /* Debug */,
+				E3A25137221D4355009AF6D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
