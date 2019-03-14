@@ -44,13 +44,17 @@ import Foundation
     @objc public static func v(tag : String = "ULog" , msg : String){
         logsCountPlus()
         
+
         printLog(level: .Verbose, tag: tag, msg: msg)
         
-        guard let encryptMsg = UltimateLog.default.encrypt(string: msg) else {
-            _mars.log(Int32(FilterLevel.Verbose.rawValue), tag: tag, content: msg)
-            return
+        DispatchQueue.global(qos: .background).async {
+            guard let encryptMsg = UltimateLog.default.encrypt(string: msg) else {
+                _mars.log(Int32(FilterLevel.Verbose.rawValue), tag: tag, content: msg)
+                return
+            }
+            _mars.log(Int32(FilterLevel.Verbose.rawValue), tag: tag, content: encryptMsg)
         }
-        _mars.log(Int32(FilterLevel.Verbose.rawValue), tag: tag, content: encryptMsg)
+        
     }
     @objc public let v = {(_ tag : String , _ msg : String) in
         UltimateLog.v(tag: tag, msg: msg)
@@ -64,11 +68,14 @@ import Foundation
         
         printLog(level: .Debug, tag: tag, msg: msg)
         
-        guard let encryptMsg = UltimateLog.default.encrypt(string: msg) else {
-            _mars.log(Int32(FilterLevel.Debug.rawValue), tag: tag, content: msg)
-            return
+        DispatchQueue.global(qos: .background).async {
+            guard let encryptMsg = UltimateLog.default.encrypt(string: msg) else {
+                _mars.log(Int32(FilterLevel.Debug.rawValue), tag: tag, content: msg)
+                return
+            }
+            _mars.log(Int32(FilterLevel.Debug.rawValue), tag: tag, content: encryptMsg)
         }
-        _mars.log(Int32(FilterLevel.Debug.rawValue), tag: tag, content: encryptMsg)
+
     }
     @objc public let d = {(_ tag : String , _ msg : String) in
         UltimateLog.d(tag: tag, msg: msg)
@@ -85,11 +92,14 @@ import Foundation
         
         printLog(level: .Info, tag: tag, msg: msg)
         
-        guard let encryptMsg = UltimateLog.default.encrypt(string: msg) else {
-            _mars.log(Int32(FilterLevel.Info.rawValue), tag: tag, content: msg)
-            return
+        DispatchQueue.global(qos: .background).async {
+            guard let encryptMsg = UltimateLog.default.encrypt(string: msg) else {
+                _mars.log(Int32(FilterLevel.Info.rawValue), tag: tag, content: msg)
+                return
+            }
+            _mars.log(Int32(FilterLevel.Info.rawValue), tag: tag, content: encryptMsg)
         }
-        _mars.log(Int32(FilterLevel.Info.rawValue), tag: tag, content: encryptMsg)
+
     }
     @objc public let i = {(_ tag : String , _ msg : String) in
         UltimateLog.i(tag: tag, msg: msg)
