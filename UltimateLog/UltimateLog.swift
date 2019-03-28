@@ -28,7 +28,7 @@ import Foundation
     private var _encryptKey : Data? = nil
     static let logPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] + "/UltimateLog/"
     static var logsCount = 0;
-    
+    static var fLevel = FilterLevel.All;
 
     
     
@@ -37,7 +37,8 @@ import Foundation
             let encryptSeed = encryptSeed!
             UltimateLog.default.plantEncryptSeed(seed: encryptSeed)
         }
-        _mars.initXloggerFilterLevel(Int32(filterLevel.rawValue), path: logPath, prefix: prefix)
+        fLevel = filterLevel;
+        _mars.initXloggerFilterLevel(Int32(fLevel.rawValue), path: logPath, prefix: prefix)
         LoggerUtility.printInitInfo()
     }
     
@@ -153,6 +154,11 @@ import Foundation
 // MARK: -  Open Interface
 extension UltimateLog{
     private class func printLog(level : FilterLevel , tag : String , msg : String){
+        
+        if level.rawValue < fLevel.rawValue {
+            return;
+        }
+        
         var levelStr : String
         switch level {
         case .Verbose:
