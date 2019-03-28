@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "UltimateLog"
-  spec.version      = "0.0.11"
+  spec.version      = "0.0.12"
   spec.summary      = "A pretty Log Util for iOS."
   spec.swift_version = "5.0"
 
